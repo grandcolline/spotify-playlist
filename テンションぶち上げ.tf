@@ -30,6 +30,14 @@ data "spotify_track" "dance_with_somebady" {
   # artist = "Mando Diao"
 }
 
+data "spotify_track" "groria" {
+  url = "https://open.spotify.com/track/0zz9Y8cDtiIe56XpG73vJy"
+
+  ## Computed
+  # name   = "Groria"
+  # artist = "Mando Diao"
+}
+
 resource "spotify_playlist" "up" {
   name        = "🤘 テンションぶちあげ"
   description = "とにかくノリたいときに🕺"
@@ -40,6 +48,7 @@ resource "spotify_playlist" "up" {
     data.spotify_track.if_i_ever_feel_better.id,
     data.spotify_track.easy.id,
     data.spotify_track.dance_with_somebady.id,
+    data.spotify_track.groria.id,
   ]
 }
 
