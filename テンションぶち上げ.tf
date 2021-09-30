@@ -38,6 +38,14 @@ data "spotify_track" "groria" {
   # artist = "Mando Diao"
 }
 
+data "spotify_track" "if_you_ever_leave_im_comming_with_you" {
+  url = "https://open.spotify.com/track/1BiRaCcUqWpLLb4LZpvRMF"
+
+  ## Computed
+  # name   = "If You Ever Leave, I'm Comming with You"
+  # artist = "The Wombats"
+}
+
 resource "spotify_playlist" "up" {
   name        = "🤘 テンションぶちあげ"
   description = "とにかくノリたいときに🕺"
@@ -49,6 +57,7 @@ resource "spotify_playlist" "up" {
     data.spotify_track.easy.id,
     data.spotify_track.dance_with_somebady.id,
     data.spotify_track.groria.id,
+    data.spotify_track.if_you_ever_leave_im_comming_with_you.id,
   ]
 }
 
