@@ -5,6 +5,15 @@ terraform {
       source  = "conradludgate/spotify"
     }
   }
+
+  backend "remote" {
+    hostname     = "app.terraform.io"
+    organization = "grandcolline"
+    workspaces {
+      name = "spotify-playlist"
+    }
+  }
+
 }
 
 provider "spotify" {
