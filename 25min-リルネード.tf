@@ -1,5 +1,5 @@
 data "spotify_track" "mouwatashiwosukininatterukimihe" {
-  yrl = "https://open.spotify.com/track/0864cdUzJvNGOrk1HUa5Vi"
+  url = "https://open.spotify.com/track/0864cdUzJvNGOrk1HUa5Vi"
 
   ## Computed
   # name   = "もうわたしを好きになっている君へ"
