@@ -47,8 +47,8 @@ data "spotify_track" "oudoutekinalovesong" {
 }
 
 resource "spotify_playlist" "rirune_25" {
-  name        = "[⏰25min] リルネード"
-  description = "リルネードの代表曲で, Let's Pomodoro!"
+  name        = "⏰25min リルネード"
+  description = "リルネードの代表曲で Let's Pomodoro!"
   public      = true
 
   tracks = [
