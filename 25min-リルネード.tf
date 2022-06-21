@@ -62,7 +62,7 @@ resource "spotify_playlist" "rirune_25" {
   ]
 }
 
-output "25min_rirune_url" {
+output "rirune_25_url" {
   value       = "https://open.spotify.com/playlist/${spotify_playlist.rirune_25.id}"
   description = "プレイリスト「25min リルネード」のURL"
 }
