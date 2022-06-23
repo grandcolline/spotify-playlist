@@ -70,7 +70,7 @@ resource "spotify_playlist" "chelmico_25" {
   ]
 }
 
-output "rirune_25_url" {
+output "chelmico_25_url" {
   value       = "https://open.spotify.com/playlist/${spotify_playlist.chelmico_25.id}"
   description = "プレイリスト「25min chelmico」のURL"
 }
