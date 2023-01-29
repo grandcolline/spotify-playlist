@@ -1,0 +1,12 @@
+{
+  "language": "typescript",
+  "app": "npx ts-node main.ts",
+  "projectId": "226527c5-cce3-4af3-b943-b93bfe637111",
+  "sendCrashReports": "false",
+  "terraformProviders": ["conradludgate/spotify@~> 0.2.7"],
+  "terraformModules": [],
+  "context": {
+    "excludeStackIdFromLogicalIds": "true",
+    "allowSepCharsInLogicalIds": "true"
+  }
+}
