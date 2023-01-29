@@ -47,6 +47,26 @@ class MyStack extends TerraformStack {
       ],
     });
 
+    MyPlaylist(this, "gakusei", {
+      name: "🙈 学生時代に聴きまくった洋楽",
+      tracks: [
+        "4KspXoCVJXGY1VrvEe1Hdm", // Don't Look Back Into The Sun / The Libertines
+        "1pvFjb271biKERTR0BdBxk", // Live Forever / Oasis
+        "2fyIS6GXMgUcSv4oejx63f", // Mardy Bum / Arctic Monkeys
+        "4ujUbvyGtlXFuGzCPwp8At", // What Katie Did / The Libertines
+        "6ebxt3Iylxe0GcEuUGlIvb", // Dreaming of You / The Coral
+        "5sVPOuJJAmidyxU8LjJBVu", // Trash / Suede
+        "5yWVfYEeQRPuFtytvkOgU1", // Beautiful Ones / Suede
+        "5eSllZgRWCIJsDTAqFRwQw", // Coffee & TV / Blur
+        "63OQupATfueTdZMWTxW03A", // Karma Police / Radiohead
+        "3AJwUDP919kvQ9QcozQPxg", // Yellow / Coldplay
+        "4q4RYl9RCY9XaY5mNkfz9w", // Bill MacCai / The Coral
+        "1xRRPtBWty61XDG7BvMdmL", // Don't Look Back In Anger / Oasis
+        "0REEBq6sVGhhP9iQBHGiJ6", // I Am The Resurrection / The Stone Roses
+        "5JNVvvof9WdzAMZ9M6b2Wk", // All Around the World / Oasis
+      ],
+    });
+
     MyPlaylist(this, "citypop", {
       name: "🌃 おしゃシティポップ",
       description: "いま流行りのChillとやらをする曲たち🌛",
