@@ -123,7 +123,7 @@ class MyStack extends TerraformStack {
       tracks: [
         "3DR2RbatuGm3UVMrFflZxM", // わたしの一番かわいいところ / FRUITS ZIPPER
         "0TQpPhA1OBrVGIfaKShRrx", // femme fatal / だいしきゅーだいしゅき
-        "2Z7Kpoh85XBTrCmsYfdSmg", // ハジマリズム / ジョナゴールド
+        "1pkrnrxkcUGnCOQmhU7DnG", // ハジマリズム / ジョナゴールド
         "0UqogR4fQoXiClzRibMMSx", // 旬をすすめ / さよならステイチューン
         "29WVraNo2Gcd8BtTYlA5ox", // シュガーゲーム / ステラシュガレット
         "0Yh8KpL8Iu733TRiUILNup", // 蜃気楼 / タイトル未定
