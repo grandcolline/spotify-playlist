@@ -9,26 +9,26 @@ export interface MyPlaylistConfig {
   tracks: string[];
 }
 
-export const MyPlaylist = (
-  scope: Construct,
-  id: string,
-  config: MyPlaylistConfig
-) => {
-  // デフォルト値を設定
-  const description = config.description ?? "";
-  const publicFlg = config.public ?? true;
+export class MyPlaylist {
+  public constructor(scope: Construct, id: string, config: MyPlaylistConfig) {
+    // デフォルト値を設定
+    const name = config.name;
+    const description = config.description ?? "";
+    const publicFlg = config.public ?? true;
+    const tracks = config.tracks;
 
-  // プレイリストの作成
-  const playlist = new Playlist(scope, id, {
-    name: config.name,
-    description,
-    public: publicFlg,
-    tracks: config.tracks,
-  });
+    // プレイリストの作成
+    const playlist = new Playlist(scope, id, {
+      name,
+      description,
+      public: publicFlg,
+      tracks,
+    });
 
-  // URL のアウトプット
-  new TerraformOutput(scope, id + "_url", {
-    value: `https://open.spotify.com/playlist/${playlist.id}`,
-    description: "プレイリスト「" + config.name + "」のURL",
-  });
-};
+    // URL のアウトプット
+    new TerraformOutput(scope, id + "_url", {
+      value: `https://open.spotify.com/playlist/${playlist.id}`,
+      description: "プレイリスト「" + name + "」のURL",
+    });
+  }
+}
