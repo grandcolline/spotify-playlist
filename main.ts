@@ -34,7 +34,7 @@ class MyStack extends TerraformStack {
 
     // Playlist
 
-    MyPlaylist(this, "up", {
+    new MyPlaylist(this, "up", {
       name: "🤘 テンションぶちあげ",
       description: "とにかくノリたいときに🕺",
       tracks: [
@@ -47,7 +47,7 @@ class MyStack extends TerraformStack {
       ],
     });
 
-    MyPlaylist(this, "gakusei", {
+    new MyPlaylist(this, "gakusei", {
       name: "🙈 学生時代に聴きまくった洋楽",
       tracks: [
         "4KspXoCVJXGY1VrvEe1Hdm", // Don't Look Back Into The Sun / The Libertines
@@ -67,7 +67,7 @@ class MyStack extends TerraformStack {
       ],
     });
 
-    MyPlaylist(this, "citypop", {
+    new MyPlaylist(this, "citypop", {
       name: "🌃 おしゃシティポップ",
       description: "いま流行りのChillとやらをする曲たち🌛",
       tracks: [
@@ -97,7 +97,7 @@ class MyStack extends TerraformStack {
       ],
     });
 
-    MyPlaylist(this, "idol_2020", {
+    new MyPlaylist(this, "idol_2020", {
       name: "🎤 アイドルソング2020",
       description:
         "個人的な独断と偏見に満ちた2020年のアイドルソングのベスト10曲",
@@ -115,7 +115,7 @@ class MyStack extends TerraformStack {
       ],
     });
 
-    MyPlaylist(this, "idol_2021", {
+    new MyPlaylist(this, "idol_2021", {
       name: "🎤 アイドルソング2021",
       description:
         "個人的な独断と偏見に満ちた2021年のアイドルソングのベスト13曲",
@@ -136,7 +136,7 @@ class MyStack extends TerraformStack {
       ],
     });
 
-    MyPlaylist(this, "idol_2022", {
+    new MyPlaylist(this, "idol_2022", {
       name: "🎤 アイドルソング2022",
       description:
         "個人的な独断と偏見に満ちた2022年のアイドルソングのベスト12曲",
